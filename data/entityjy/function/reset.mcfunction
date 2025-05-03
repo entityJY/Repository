@@ -1,0 +1,5 @@
+data remove storage repository:data players
+data remove storage repository:data temporary
+scoreboard objectives remove raycast_steps_terminal
+scoreboard objectives remove terminal_id
+scoreboard objectives remove terminal_set_data

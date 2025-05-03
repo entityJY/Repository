@@ -1,3 +1,8 @@
-execute at @e[type=minecraft:marker, tag=terminal] as @e[type=minecraft:marker, tag=terminal, distance=0...1] unless block ~ ~ ~ minecraft:barrel run say terminal broken
-execute at @e[type=minecraft:marker, tag=terminal] as @e[type=minecraft:marker, tag=terminal, distance=0...1] unless block ~ ~ ~ minecraft:barrel run kill @s
-# unless data block ~ ~ ~ components.minecraft:custom_data.terminal
+# remove data from storage
+
+# store ID to temporary storage
+execute store result storage repository:data temporary.ID int 1 run scoreboard players get @s terminal_id
+# save data
+function entityjy:terminal/storage/data_delete_macro with storage repository:data temporary
+
+kill @s

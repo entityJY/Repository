@@ -7,4 +7,9 @@
 
 say Thank you for using Repository!
 
+# scoreboard for raycasting
 scoreboard objectives add raycast_steps_terminal dummy
+
+# scoreboards for data modification of the terminals
+scoreboard objectives add terminal_id dummy
+scoreboard objectives add terminal_set_data dummy
