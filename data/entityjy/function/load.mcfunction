@@ -7,4 +7,4 @@
 
 say Thank you for using Repository!
 
-scoreboard objectives add raycast_steps dummy
+scoreboard objectives add raycast_steps_terminal dummy
