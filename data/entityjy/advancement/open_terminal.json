@@ -22,6 +22,6 @@
       }
     },
     "rewards": {
-      "function": "entityjy:terminal/open_terminal"
+      "function": "entityjy:terminal/opening/open_terminal"
     }
   }

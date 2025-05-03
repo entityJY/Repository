@@ -1,7 +1,1 @@
-give @s minecraft:barrel[
-    minecraft:custom_data={"terminal":1}, 
-    minecraft:container=[
-        {slot:0,item:{id:"polished_blackstone_button",count:1,components:{custom_data:{terminal:1}}}}
-    ],
-    minecraft:custom_name="Terminal"
-]
+give @s minecraft:barrel[minecraft:custom_data={"terminal":1}, minecraft:custom_name="Terminal", minecraft:enchantment_glint_override=true]

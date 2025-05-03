@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-      "function": "entityjy:terminal/place_terminal"
+      "function": "entityjy:terminal/placing/place_terminal"
     }
   }
