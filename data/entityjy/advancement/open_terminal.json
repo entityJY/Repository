@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "open_barrel": {
+        "trigger": "minecraft:any_block_use",
+        "conditions": {
+          "location": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "block": {
+                      "blocks": "minecraft:barrel"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "entityjy:terminal/open_terminal"
+    }
+  }
