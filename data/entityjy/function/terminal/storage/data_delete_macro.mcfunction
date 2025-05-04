@@ -1,4 +1,4 @@
 # save to storage
-$data remove storage repository:data players[{ID:$(ID)}]
+$data remove storage entityjy:repository players[{ID:$(ID)}]
 # message for debugging
 say storage has been destroyed
