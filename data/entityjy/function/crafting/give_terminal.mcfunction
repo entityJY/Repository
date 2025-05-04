@@ -1,1 +1,0 @@
-give @s minecraft:barrel[minecraft:custom_data={"terminal":1}, minecraft:custom_name="Terminal", minecraft:enchantment_glint_override=true]
