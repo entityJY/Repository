@@ -14,6 +14,7 @@ scoreboard objectives add raycast_steps_terminal dummy
 scoreboard objectives add terminal_change_data dummy
 scoreboard objectives add terminal_id dummy
 scoreboard objectives add terminal_set_data dummy
+scoreboard objectives add terminal_open_id dummy
 
 forceload add 29999990 29999990 29999990 29999990
 setblock 29999990 -64 29999990 yellow_shulker_box
