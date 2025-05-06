@@ -6,5 +6,3 @@ $data modify storage entityjy:repository players[{ID:$(ID)}].ui.temp.prev set fr
 $execute store result score @s terminal_change_data run data modify storage entityjy:repository players[{ID:$(ID)}].ui.temp.prev set from block ~ ~ ~ Items
 # if a difference is found
 $execute if score @s terminal_change_data matches 1.. at @s run function entityjy:terminal/ui/on_ui_change with storage entityjy:repository players[{ID:$(ID)}]
-# save container data
-$data modify storage entityjy:repository players[{ID:$(ID)}].inventory set from block ~ ~ ~ Items
