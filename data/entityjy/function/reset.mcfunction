@@ -1,4 +1,4 @@
-data remove storage entityjy:repository players
+data remove storage entityjy:repository terminals
 data remove storage entityjy:repository temporary
 scoreboard objectives remove raycast_steps_terminal
 scoreboard objectives remove terminal_id

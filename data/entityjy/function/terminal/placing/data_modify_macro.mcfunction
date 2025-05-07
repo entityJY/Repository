@@ -1,1 +1,1 @@
-$data modify storage entityjy:repository players[{ID:$(ID)}].inventory set from block ~ ~ ~ Items
+$data modify storage entityjy:repository terminals[{ID:$(ID)}].inventory set from block ~ ~ ~ Items
