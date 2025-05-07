@@ -11,12 +11,17 @@ say Thank you for using Repository!
 scoreboard objectives add raycast_steps_terminal dummy
 scoreboard objectives add raycast_steps_terminal2 dummy
 
-# scoreboards for data modification of the terminals
-scoreboard objectives add terminal_change_data dummy
+# scoreboard for personal data storage for terminals
 scoreboard objectives add terminal_id dummy
-scoreboard objectives add terminal_set_data dummy
+
+# scoreboard for personal data storage for players
+scoreboard objectives add player_id dummy
+
+# scoreboard for detecting when the ui of the terminal is changed
+scoreboard objectives add terminal_change_data dummy
+
+# scoreboard for showing which terminal a player has opened
 scoreboard objectives add terminal_open_id dummy
-scoreboard objectives add looking_at_terminal dummy
 
 # team for slimes used to lock terminals when in use
 team add no_collision

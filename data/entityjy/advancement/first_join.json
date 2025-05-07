@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "player_join": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "entityjy:player/storage/assign_personal_storage"
+    }
+  }
