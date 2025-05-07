@@ -1,2 +1,2 @@
-scoreboard players set @s raycast_steps_terminal2 0
+scoreboard players reset @s raycast_steps_terminal2
 return 1

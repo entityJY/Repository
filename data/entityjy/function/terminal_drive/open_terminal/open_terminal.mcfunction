@@ -1,1 +1,0 @@
-advancement revoke @s only entityjy:open_terminal_wand

@@ -1,0 +1,1 @@
+say opened terminal with wand
