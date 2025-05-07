@@ -24,6 +24,6 @@
       }
     },
     "rewards": {
-      "function": "entityjy:"
+      "function": "entityjy:terminal_drive/open_terminal/open_terminal"
     }
   }
