@@ -1,4 +1,3 @@
-say returned item
 data remove block 29999990 -64 29999990 Items
 $data modify block 29999990 -64 29999990 Items set from storage entityjy:repository terminals[{ID:$(ID)}].ui.temp
 # change to use raycast
