@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:match_tool",
+    "predicate": {
+        "items": "minecraft:music_disc_far",
+        "components": {
+            "minecraft:custom_data": {
+                "terminal_wand": true
+            }
+        }
+    }
+}

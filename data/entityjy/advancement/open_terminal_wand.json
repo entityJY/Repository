@@ -1,0 +1,29 @@
+{
+    "criteria": {
+      "open_terminal_wand": {
+        "trigger": "minecraft:any_block_use",
+        "conditions": {
+          "location": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:barrel"
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:music_disc_far",
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "terminal_wand": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "entityjy:"
+    }
+  }
