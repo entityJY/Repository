@@ -1,11 +1,35 @@
 {
-    "condition": "minecraft:match_tool",
-    "predicate": {
-        "items": "minecraft:music_disc_far",
-        "components": {
-            "minecraft:custom_data": {
-                "terminal_wand": true
-            }
-        }
-    }
+	"condition": "minecraft:any_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"predicates": {
+							"minecraft:custom_data": {
+								"terminal_wand": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"offhand": {
+						"predicates": {
+							"minecraft:custom_data": {
+								"terminal_wand": true
+							}
+						}
+					}
+				}
+			}
+		}
+	]
 }
