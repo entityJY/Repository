@@ -8,3 +8,5 @@ $execute store result score @s terminal_change_data run data modify storage enti
 $execute if score @s terminal_change_data matches 1.. at @s run function entityjy:terminal/ui/on_ui_change with storage entityjy:repository terminals[{ID:$(ID)}]
 # clear temp data
 $data remove storage entityjy:repository terminals[{ID:$(ID)}].ui.temp.prev
+# save current ui to inventory
+$data modify storage entityjy:repository terminals[{ID:$(ID)}].inventory set from block ~ ~ ~ Items
