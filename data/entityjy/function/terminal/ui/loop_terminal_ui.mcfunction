@@ -6,3 +6,5 @@ $data modify storage entityjy:repository terminals[{ID:$(ID)}].ui.temp.prev set 
 $execute store result score @s terminal_change_data run data modify storage entityjy:repository terminals[{ID:$(ID)}].ui.temp.prev set from block ~ ~ ~ Items
 # if a difference is found
 $execute if score @s terminal_change_data matches 1.. at @s run function entityjy:terminal/ui/on_ui_change with storage entityjy:repository terminals[{ID:$(ID)}]
+# clear temp data
+$data remove storage entityjy:repository terminals[{ID:$(ID)}].ui.temp.prev
