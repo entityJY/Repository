@@ -1,18 +1,22 @@
 {
-  "criteria": {
-    "open_terminal_wand": {
-      "trigger": "minecraft:any_block_use",
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:barrel"
-          }
-        ]
-      }
+    "criteria": {
+        "open_terminal": {
+            "trigger": "minecraft:any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:barrel"
+                            }
+                        }
+                  } 
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "entityjy:terminal/opening/open_terminal"
     }
-  },
-  "rewards": {
-    "function": "entityjy:terminal/opening/open_terminal"
-  }
 }

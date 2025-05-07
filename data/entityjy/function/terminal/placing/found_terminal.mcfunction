@@ -1,4 +1,4 @@
-$summon minecraft:marker $(x) $(y) $(z) {Tags:["terminal"], CustomName:'["",{"text":"Terminal","italic":false}]'}
+$summon minecraft:marker $(x) $(y) $(z) {Tags:["terminal"], CustomName:'Terminal'}
 
 # clear temp data
 data remove storage entityjy:repository temporary
