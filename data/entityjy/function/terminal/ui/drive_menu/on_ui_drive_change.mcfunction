@@ -11,7 +11,7 @@ $data modify block ~ ~ ~ Items set from storage entityjy:repository internals.te
 # insert ui.temp.inventory into Items, only items with open slots available should be copied
 $data modify block ~ ~ ~ Items insert 0 from storage entityjy:repository terminal[{ID:$(ID)}].ui.temp.inventory[]
 # give drives in Items the ui_item component to prevent them from being returned to the player later
-data modify block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data merge value {ui_item:{}}
+data modify block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data merge value {ui_item:{cmd:"function entityjy:terminal/ui/drives/load_drive"}}
 # append drives with ui_item component to ui.temp.inventory
 $data modify storage entityjy:repository terminal[{ID:$(ID)}].ui.temp.inventory append from block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}, ui_item:{}}}}]
 # set Items to ui.temp.inventory
@@ -34,6 +34,13 @@ $data modify block ~ ~ ~ Items set from storage entityjy:repository terminals[{I
 
 # append default scheme of drives to Items
 $data modify block ~ ~ ~ Items append from storage entityjy:repository internals.terminal.driveScheme$(terminal)[]
+
+# fill remaining slots in Items with open_drive_slot item
+data modify block ~ ~ ~ Items insert 0 from storage entityjy:repository internals.terminal.open_drive_slots[]
+# save Items to terminal.main_page
+$data modify storage entityjy:repository terminals[{ID:$(ID)}].main_page set from block ~ ~ ~ Items
+# remove open_drive_slot items from Items
+data remove block ~ ~ ~ Items[{components:{"minecraft:custom_name":"No Drive Input","minecraft:custom_data": {ui_item:{cmd:"say Please enter a drive"}}}}]
 
 # clear ui_item component from drives
 data remove block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data.ui_item
