@@ -1,1 +1,1 @@
-give @s minecraft:music_disc_far[!jukebox_playable, custom_name='Wand', custom_data={terminal_wand:true}, item_model="minecraft:glow_ink_sac"]
+give @s minecraft:music_disc_far[!jukebox_playable, custom_name=[{"text":"Wand","italic":false}], custom_data={terminal_wand:true}, item_model="minecraft:glow_ink_sac", item_name=[{"text":"Wand","italic":false}]]

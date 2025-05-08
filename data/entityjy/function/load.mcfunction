@@ -27,5 +27,8 @@ scoreboard objectives add terminal_open_id dummy
 team add no_collision
 team modify no_collision collisionRule never
 
+# load function in charge of making terminal storage work
+function entityjy:terminal/terminal_load
+
 forceload add 29999990 29999990 29999990 29999990
 setblock 29999990 -64 29999990 yellow_shulker_box
