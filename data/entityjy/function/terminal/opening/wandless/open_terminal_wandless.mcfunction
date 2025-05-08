@@ -1,4 +1,3 @@
-say opened terminal with no wand
 # run raycast function
 execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function entityjy:terminal/opening/wandless/terminal_raycast
 # clear players score
