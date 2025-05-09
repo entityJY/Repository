@@ -1,0 +1,2 @@
+$data modify block ~ ~ ~ Items set from storage entityjy:repository Items[{ID:$(ID)}].main_page
+$data modify storage entityjy:repository Items[{ID:$(ID)}].inventory set from storage entityjy:repository Items[{ID:$(ID)}].main_page
