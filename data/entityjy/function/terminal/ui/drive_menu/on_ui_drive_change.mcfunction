@@ -15,17 +15,11 @@ data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_d
 data modify block ~ ~ ~ Items insert 0 from block ~ ~ ~ components.minecraft:custom_data.temp.ui.inventory[]
 # give drives in Items the ui_item component to prevent them from being returned to the player later
 data modify block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data merge value {ui_item:{cmd:"function entityjy:terminal/ui/drives/load_drive"}}
-
-
 # append drives with ui_item component to ui.temp.inventory
 data modify block ~ ~ ~ components.minecraft:custom_data.temp.ui.inventory append from block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}] 
 # ui_item?
-
-
 # set Items to ui.temp.inventory
 data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_data.temp.ui.inventory
-
-
 
 
 # return items to player
@@ -33,7 +27,7 @@ data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_d
 # save current inventory of terminal to ui.temp.return_items
 data modify block ~ ~ ~ components.minecraft:custom_data.temp.ui.return_items set from block ~ ~ ~ Items
 # delete all items from ui.temp with that contains the component ui_item
-data remove block ~ ~ ~ components.minecraft:custom_data.return_items[{components:{"minecraft:custom_data":{ui_item:{}}}}]
+data remove block ~ ~ ~ components.minecraft:custom_data.temp.ui.return_items[{components:{"minecraft:custom_data":{ui_item:{}}}}]
 # if there are items remaining in ui.temp, return that item to the player
 execute if data block ~ ~ ~ components.minecraft:custom_data.temp.ui.return_items[0] run function entityjy:terminal/ui/return_items
 
@@ -61,8 +55,10 @@ data modify block ~ ~ ~ components.minecraft:custom_data.main_menu set from bloc
 # remove open_drive_slot items from Items
 data remove block ~ ~ ~ Items[{components:{"minecraft:custom_name":"No Drive Input","minecraft:custom_data": {ui_item:{cmd:"say Please enter a drive"}}}}]
 
+
 # clear ui_item component from drives
 data remove block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data.ui_item
+
 
 # save current ui to drives
 data modify block ~ ~ ~ components.minecraft:custom_data.drives set from block ~ ~ ~ Items
