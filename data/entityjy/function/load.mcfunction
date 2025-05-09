@@ -5,6 +5,11 @@
  # Created by entityJY.
 ##
 
+## terminal structure
+ # drives       - contains loaded drives
+ # main_page    - contains main page of terminal
+ # inventory    - contains the currently loaded terminal page
+
 say Thank you for using Repository!
 
 # scoreboard for raycasting
