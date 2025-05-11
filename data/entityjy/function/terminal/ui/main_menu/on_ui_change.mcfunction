@@ -38,6 +38,6 @@ data modify block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items 
 # if item contains no data in ui_item, remove item from ui.temp.selected_items
 data remove block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items[{components:{"minecraft:custom_data":{ui_item:{empty:1b}}}}]
 # if only one button is clicked, execute on_click
-execute if data block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items[0] unless data block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items[1] run function entityjy:terminal/ui/main_menu/on_click
+execute if data block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items[0] unless data block ~ ~ ~ components.minecraft:custom_data.temp.ui.selected_items[1] run function entityjy:terminal/ui/on_button_press
 # refresh menu by removing prev:1b data from all items
 data remove block ~ ~ ~ Items[].components."minecraft:custom_data".prev

@@ -14,7 +14,7 @@ data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_d
 # insert ui.temp.inventory into Items, only items with open slots available should be copied
 data modify block ~ ~ ~ Items insert 0 from block ~ ~ ~ components.minecraft:custom_data.temp.ui.inventory[]
 # give drives in Items the ui_item component to prevent them from being returned to the player later
-data modify block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data merge value {ui_item:{cmd:"function entityjy:terminal/ui/drives/load_drive"}}
+data modify block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}].components.minecraft:custom_data merge value {ui_item:{cmd:"function entityjy:terminal/ui/drives/load_drive with block ~ ~ ~ components.minecraft:custom_data.temp.ui.button"}}
 # append drives with ui_item component to ui.temp.inventory
 data modify block ~ ~ ~ components.minecraft:custom_data.temp.ui.inventory append from block ~ ~ ~ Items[{components:{"minecraft:custom_data":{terminal_drive:{}}}}] 
 # ui_item?
