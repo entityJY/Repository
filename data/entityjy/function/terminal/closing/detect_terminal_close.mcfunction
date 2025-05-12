@@ -1,2 +1,0 @@
-execute store result storage entityjy:repository temporaryClosing.ID int 1 run scoreboard players get @s terminal_open_id
-execute at @s anchored eyes positioned ^ ^ ^ anchored feet unless function entityjy:terminal/raycast_terminal/terminal_raycast run function entityjy:terminal/closing/kill_slime_macro with storage entityjy:repository temporary

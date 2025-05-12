@@ -1,7 +1,9 @@
-data remove storage entityjy:repository temporary
+data remove storage entityjy:repository temp
 data remove storage entityjy:repository players
+data remove storage entityjy:repository terminals
 scoreboard objectives remove raycast_steps_terminal
 scoreboard objectives remove raycast_steps_terminal2
 scoreboard objectives remove terminal_change_data
 scoreboard objectives remove player_id
-scoreboard objectives remove placed_terminal_level
+scoreboard objectives remove terminal_id
+scoreboard objectives remove terminal_mode

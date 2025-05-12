@@ -1,0 +1,1 @@
+$data remove storage entityjy:repository terminals[{id:$(id)}]

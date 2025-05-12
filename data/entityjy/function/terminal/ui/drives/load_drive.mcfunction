@@ -1,8 +1,5 @@
-$data modify block ~ ~ ~ components.minecraft:custom_data.inventory set from block ~ ~ ~ Items[{Slot:$(slot)b}].components.minecraft:custom_data.terminal_drive.inventory
-$data modify block ~ ~ ~ Items set from block ~ ~ ~ Items[{Slot:$(slot)b}].components.minecraft:custom_data.terminal_drive.inventory
-# remove editing_drives tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove editing_drives
-# remove main_menu tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove main_menu
-# add editing_drive_storage tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] add editing_drive_storage
+$data modify storage entityjy:repository temp.ui.new_ui set from block ~ ~ ~ Items[{Slot:$(slot)b}].components.minecraft:custom_data.terminal_drive.inventory
+$data modify storage entityjy:repository terminals[{id:$(id)}].inventory set from storage entityjy:repository temp.ui.new_ui
+$data modify storage entityjy:repository terminals[{id:$(id)}].drive_slot set value $(slot)b
+data modify block ~ ~ ~ Items set from storage entityjy:repository temp.ui.new_ui
+scoreboard players set @e[type=minecraft:marker, sort=nearest, limit=1] terminal_mode 3

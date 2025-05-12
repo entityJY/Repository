@@ -1,6 +1,9 @@
 summon minecraft:marker ~ ~ ~ {Tags:["terminal"], CustomName:'Terminal'}
 
-# store level of table to scoreboard
-execute store result score @s placed_terminal_level run data get block ~ ~ ~ components.minecraft:custom_data.terminal
+# terminal storage set up
+execute store result storage entityjy:repository temp.terminal_placed.id int 1 run scoreboard players add #new terminal_id 1
 
-execute if score @s placed_terminal_level matches 3 run function entityjy:terminal/placing/storage_setters/terminal_3
+# store level of table to temp.terminal_placed.level
+data modify storage entityjy:repository temp.terminal_placed.level set from block ~ ~ ~ components.minecraft:custom_data.terminal
+
+function entityjy:terminal/placing/set_terminal_storage with storage entityjy:repository temp.terminal_placed

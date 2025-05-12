@@ -1,8 +1,4 @@
-data modify block ~ ~ ~ components.minecraft:custom_data.inventory set from block ~ ~ ~ components.minecraft:custom_data.main_menu
-data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_data.main_menu
-# remove editing_drives tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove editing_drives
-# remove editing_drive_storage tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove editing_drive_storage
-# add main_menu tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] add main_menu
+$function entityjy:terminal/ui/drives/save_drive_inventory with storage entityjy:repository terminals[{id:$(id)}]
+$data modify storage entityjy:repository terminals[{id:$(id)}].inventory set from storage entityjy:repository terminals[{id:$(id)}].main_menu
+$data modify block ~ ~ ~ Items set from storage entityjy:repository terminals[{id:$(id)}].main_menu
+scoreboard players set @e[type=minecraft:marker, sort=nearest, limit=1] terminal_mode 1

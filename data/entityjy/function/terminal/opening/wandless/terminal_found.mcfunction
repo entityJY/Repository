@@ -1,11 +1,8 @@
+# if in drive_editor mode save current drive ui
+$execute if score @e[type=minecraft:marker, sort=nearest, limit=1] terminal_mode matches 3 run function entityjy:terminal/ui/drives/save_drive_inventory with storage entityjy:repository terminals[{id:$(id)}]
 # reset raycast steps
 scoreboard players set @s raycast_steps_terminal 0
-# remove editing_drives tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove editing_drives
-# remove editing_drive_storage tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] remove editing_drive_storage
-# add main_menu tag
-tag @e[type=minecraft:marker, limit=1, sort=nearest] add main_menu
+scoreboard players set @e[type=minecraft:marker, limit=1, sort=nearest] terminal_mode 1
 # load main page of terminal
-data modify block ~ ~ ~ components.minecraft:custom_data.inventory set from block ~ ~ ~ components.minecraft:custom_data.main_menu
-data modify block ~ ~ ~ Items set from block ~ ~ ~ components.minecraft:custom_data.main_menu
+$data modify storage entityjy:repository terminals[{id:$(id)}].inventory set from storage entityjy:repository terminals[{id:$(id)}].main_menu
+$data modify block ~ ~ ~ Items set from storage entityjy:repository terminals[{id:$(id)}].main_menu
