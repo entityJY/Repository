@@ -50,6 +50,8 @@ data modify storage entityjy:repository temp.ui.previous_ui set from block ~ ~ ~
 data modify block ~ ~ ~ Items set from storage entityjy:repository temp.ui.current_ui
 # insert temp.ui.previous_ui into Items
 data modify block ~ ~ ~ Items insert 0 from storage entityjy:repository temp.ui.previous_ui[]
+# return stored items to Items
+data modify block ~ ~ ~ Items append from storage entityjy:repository temp.ui.stored_items[]
 
 
 # run function of pressed ui_item
@@ -60,10 +62,6 @@ data modify storage entityjy:repository temp.ui.selected_items append from block
 data remove storage entityjy:repository temp.ui.selected_items[{components:{"minecraft:custom_data":{ui_item:{empty:1b}}}}]
 # if only one button is pressed, execute on_click
 execute if data storage entityjy:repository temp.ui.selected_items[0] unless data storage entityjy:repository temp.ui.selected_items[1] run function entityjy:terminal/ui/on_button_press with block ~ ~ ~ components.minecraft:custom_data
-
-
-# return stored items to Items
-data modify block ~ ~ ~ Items append from storage entityjy:repository temp.ui.stored_items[]
 
 
 # refresh menu

@@ -11,7 +11,7 @@
  # inventory    - contains the currently loaded terminal page
  # terminal     - an integer containing the number of open drive slots
  # id           - contains the id of the terminal for personal player storage
- # drive_slot   - contains the slot of the drive currently being edited
+ # drive_slot   - contains the slot of the drive currently being edited, null if no drive is being edited contains a byte corresponding to the drive slot if one is being edited
 
 ## structure of custom_data for terminal blocks
  # id           - contains the id of the terminal for personal player storage
