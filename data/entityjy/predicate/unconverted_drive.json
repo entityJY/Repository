@@ -1,0 +1,37 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"slots": {
+					"inventory.*": {
+						"items": "minecraft:music_disc_far",
+						"predicates": {
+							"minecraft:custom_data": {
+								"is_drive": true
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"slots": {
+					"hotbar.*": {
+						"items": "minecraft:music_disc_far",
+						"predicates": {
+							"minecraft:custom_data": {
+								"is_drive": true
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

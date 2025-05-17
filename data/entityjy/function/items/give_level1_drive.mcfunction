@@ -1,9 +1,8 @@
 give @s music_disc_far[\
-    custom_name=[{"text":"Drive","italic":false}],\
     lore=[[{"text":"Level 1","italic":false}]],\
     item_name=[{"text":"Drive","italic":false}],\
     enchantment_glint_override=true,\
-    item_model="minecraft:enchanted_book",\
+    item_model="minecraft:writable_book",\
     minecraft:custom_data={terminal_drive:{\
         pages:1,\
         inventory:[\

@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"A  ",
+		" B ",
+		"  C"
+	],
+	"key": {
+		"A": [
+			"minecraft:amethyst_shard"
+		],
+		"B": [
+			"minecraft:stick"
+		],
+		"C": [
+			"minecraft:glowstone_dust",
+			"minecraft:glow_ink_sac"
+		]
+	},
+	"result": {
+		"id": "minecraft:music_disc_far",
+		"components": {
+			"!minecraft:jukebox_playable": {},
+			"minecraft:item_name": {
+				"text": "Repository Pen",
+				"italic": false
+			},
+			"minecraft:custom_data": {
+				"terminal_wand": true
+			},
+			"minecraft:item_model": "minecraft:breeze_rod"
+		}
+	}
+}

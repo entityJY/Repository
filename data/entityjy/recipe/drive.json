@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"minecraft:writable_book",
+		"minecraft:ender_pearl",
+		"minecraft:leather",
+		"minecraft:string"
+	],
+	"result": {
+		"id": "minecraft:music_disc_far",
+		"components": {
+			"minecraft:lore": [
+				{
+					"text": "Level 1",
+					"italic": false
+				}
+			],
+			"minecraft:item_name": "Drive",
+			"minecraft:enchantment_glint_override": true,
+			"minecraft:item_model": "minecraft:writable_book",
+			"!minecraft:jukebox_playable": {},
+			"minecraft:custom_data": {
+				"is_drive": true
+			}
+		},
+		"count": 1
+	}
+}

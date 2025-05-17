@@ -22,3 +22,6 @@ execute at @e[type=minecraft:marker, tag=terminal] \
 execute as @e[type=minecraft:item] if data entity @s Item.components.minecraft:custom_data.terminal_drive run data remove entity @s Item.components.minecraft:custom_data.ui_item
 # kill ui elements
 execute as @e[type=minecraft:item] if data entity @s Item.components.minecraft:custom_data.ui_item run kill @s
+
+# find players with a non converted drive in their inventory
+execute as @p[predicate=entityjy:unconverted_drive] run function entityjy:terminal/convert_drive

@@ -1,0 +1,49 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" B ",
+		"DAD",
+		" C "
+	],
+	"key": {
+		"A": [
+			"minecraft:chiseled_bookshelf",
+			"minecraft:bookshelf",
+			"minecraft:lectern"
+		],
+		"B": [
+			"minecraft:lapis_block"
+		],
+		"C": [
+			"minecraft:ender_pearl"
+		],
+		"D": [
+			"minecraft:barrel",
+			"minecraft:chest"
+		]
+	},
+	"result": {
+		"id": "minecraft:barrel",
+		"components": {
+			"minecraft:custom_data": {
+				"terminal": 3
+			},
+			"minecraft:custom_name": {
+				"text": "Repository",
+				"italic": false
+			},
+			"minecraft:enchantment_glint_override": true,
+			"minecraft:item_name": {
+				"text": "Repository",
+				"italic": false
+			},
+			"minecraft:lore": [
+				{
+					"text": "Level 1",
+					"italic": false
+				}
+			]
+		},
+		"count": 1
+	}
+}
