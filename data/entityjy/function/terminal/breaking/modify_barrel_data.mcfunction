@@ -1,0 +1,1 @@
+$data modify entity @e[predicate=entityjy:single_barrel,sort=nearest,limit=1] Item.components merge value {custom_data:{terminal:$(level)}, enchantment_glint_override:true, item_name:[{"text":"Repository","italic":false}], lore:[[{"text":"Level 1","italic":false}]]}

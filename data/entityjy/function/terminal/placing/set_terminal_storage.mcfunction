@@ -16,3 +16,5 @@ $data modify storage entityjy:repository terminals[{id:$(id)}].drives set from s
 $data modify block ~ ~ ~ components.minecraft:custom_data.id set value $(id)
 # set id of marker
 $scoreboard players set @e[type=marker,sort=nearest,limit=1] terminal_id $(id)
+# save level of terminal
+$data modify storage entityjy:repository terminals[{id:$(id)}].level set value $(level)
