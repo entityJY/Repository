@@ -5,7 +5,7 @@ Repository is an AE2 inspired storage datapack for Minecraft versions 1.21.5-1.2
 
 ## Installation
 
-To install, download .zip file of this repository, then place it into the datapack folder for your world.
+To install, download .zip file of the latest release, then place it into the datapack folder for your world.
 
 ## Crafting Recipes
 
