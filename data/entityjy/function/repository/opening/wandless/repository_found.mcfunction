@@ -3,6 +3,6 @@ $execute if score @e[type=minecraft:marker, sort=nearest, limit=1] repository_mo
 # reset raycast steps
 scoreboard players set @s raycast_steps_repository 0
 scoreboard players set @e[type=minecraft:marker, limit=1, sort=nearest] repository_mode 1
-# load main page of terminal
+# load main page of repository
 $data modify storage entityjy:repository repositories[{id:$(id)}].inventory set from storage entityjy:repository repositories[{id:$(id)}].main_menu
 $data modify block ~ ~ ~ Items set from storage entityjy:repository repositories[{id:$(id)}].main_menu
