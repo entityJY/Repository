@@ -9,7 +9,7 @@
  # drives       - contains loaded drives
  # main_menu    - contains main page of repository
  # inventory    - contains the currently loaded repository page
- # terminal     - an integer containing the number of open drive slots
+ # repository     - an integer containing the number of open drive slots
  # id           - contains the id of the repository for personal player storage
  # drive_slot   - contains the slot of the drive currently being edited, null if no drive is being edited contains a byte corresponding to the drive slot if one is being edited
  # level        - the level of the repository (the number of open drive slots)

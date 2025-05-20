@@ -14,12 +14,12 @@ execute at @e[type=minecraft:marker, tag=terminal] \
 # detect if a terminal is currently opened, run ui loop
 execute at @e[type=minecraft:marker, tag=terminal] \
     if block ~ ~ ~ minecraft:barrel[open=true] \
-    if data block ~ ~ ~ components.minecraft:custom_data.terminal \
+    if data block ~ ~ ~ components.minecraft:custom_data.repository \
     as @e[type=minecraft:marker, tag=terminal, distance=0...1] \
     run function entityjy:repository/ui/loop_terminal_ui with block ~ ~ ~ components.minecraft:custom_data
 
 # remove ui_item component from terminal_drives on the floor
-execute as @e[type=minecraft:item] if data entity @s Item.components.minecraft:custom_data.terminal_drive run data remove entity @s Item.components.minecraft:custom_data.ui_item
+execute as @e[type=minecraft:item] if data entity @s Item.components.minecraft:custom_data.repository_drive run data remove entity @s Item.components.minecraft:custom_data.ui_item
 # kill ui elements
 execute as @e[type=minecraft:item] if data entity @s Item.components.minecraft:custom_data.ui_item run kill @s
 
