@@ -5,7 +5,7 @@
  # Created by entityJY.
 ##
 
-## structure of personal data storage for terminals, located at entityjy:repository terminals.[ID]
+## structure of personal data storage for terminals, located at entityjy:repository terminals[{ID:ID}]
  # drives       - contains loaded drives
  # main_menu    - contains main page of terminal
  # inventory    - contains the currently loaded terminal page
@@ -16,6 +16,7 @@
 
 ## structure of custom_data for terminal blocks
  # id           - contains the id of the terminal for personal player storage
+ # terminal     - contains the level of the terminal (the number of open drive slots)
 
 say Thank you for using Repository!
 
