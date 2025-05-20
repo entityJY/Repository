@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "open_terminal": {
+        "open_repository": {
             "trigger": "minecraft:any_block_use",
             "conditions": {
                 "location": [
@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "entityjy:terminal/opening/open_terminal"
+        "function": "entityjy:repository/opening/open_repository"
     }
 }

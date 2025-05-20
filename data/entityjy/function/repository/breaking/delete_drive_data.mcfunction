@@ -1,0 +1,3 @@
+data remove storage entityjy:repository temp.drive_stuff
+$data modify storage entityjy:repository temp.drive_stuff append from storage entityjy:repository repositories[{id:$(id)}].main_menu[{Slot:$(slot)b}].components.minecraft:custom_data.terminal_drive.inventory[{components:{"minecraft:custom_data":{ui_item:{}}}}]
+$data modify storage entityjy:repository repositories[{id:$(id)}].main_menu[{Slot:$(slot)b}].components.minecraft:custom_data.terminal_drive.inventory set from storage entityjy:repository temp.drive_stuff

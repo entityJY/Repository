@@ -9,7 +9,7 @@
 					"mainhand": {
 						"predicates": {
 							"minecraft:custom_data": {
-								"terminal_wand": true
+								"repository_wand": true
 							}
 						}
 					}
@@ -24,7 +24,7 @@
 					"offhand": {
 						"predicates": {
 							"minecraft:custom_data": {
-								"terminal_wand": true
+								"repository_wand": true
 							}
 						}
 					}

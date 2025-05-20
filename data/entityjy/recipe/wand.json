@@ -26,7 +26,7 @@
 				"italic": false
 			},
 			"minecraft:custom_data": {
-				"terminal_wand": true
+				"repository_wand": true
 			},
 			"minecraft:item_model": "minecraft:breeze_rod"
 		}

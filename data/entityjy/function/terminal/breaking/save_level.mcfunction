@@ -1,2 +1,0 @@
-$data modify storage entityjy:repository temp.level set from storage entityjy:repository terminals[{id:$(id)}].level
-function entityjy:terminal/breaking/modify_barrel_data with storage entityjy:repository temp

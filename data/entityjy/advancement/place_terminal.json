@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"open_terminal": {
+		"place_repository": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"location": [
@@ -17,6 +17,6 @@
 		}
 	},
 	"rewards": {
-		"function": "entityjy:terminal/placing/place_terminal"
+		"function": "entityjy:repository/placing/place_repository"
 	}
 }
